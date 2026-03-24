@@ -1,0 +1,48 @@
+## Cheatsheet for Git and Github 
+
+ - Setup & Config
+   - Initialize Git: git init -> Initialize a new Git repository
+   - Configure Username: git config --global user.name "Your Name"
+   - Configure Email: git config --global user.email "your@email.com"
+   - Check Config: git config --list
+- Basic WorkfAdd Remotelow
+   - Check Status: git status
+   - Add Files: git add file.txt or git add .
+   - Commit Changes: git commit -m "message"
+   - View Logs:
+               - git log
+               - git log --oneline
+               - git log --oneline --graph --all
+     - View Changes: git diff
+  - Branching
+    - List Branches: git branch
+    - Create Branch: git branch feature-1
+    - Switch Branch: git switch feature-1
+    - Create & Switch: git switch -c feature-1
+    - Delete Branch: git branch -d feature-1
+  - Remote
+    - Add Remote: git remote add origin <repo-url>
+    - View Remote: git remote -v
+    - Push Code: git push -u origin main
+    - Pull Changes: git pull origin main
+    - Fetch Changes: git fetch
+    - Clone Repository: git clone <repo-url>
+  - Merging & Rebasing
+    - Merge Branch: git merge feature-1
+    - Squash Merge: git merge feature-1 --squash
+    - Rebase Branch: git rebase main
+  - Stash & Cherry Pick
+    - Save Work: git stash
+    - List Stashes: git stash list
+    - Apply Stash: git stash apply <stash_id>
+    - Apply & Remove: git stash pop
+    - Apply Specific Commit: git cherry-pick <commit-id>
+  - Reset & Revert
+    - Soft Reset: git reset --soft <commit-id>
+    - Mixed Reset: git reset --mixed <commit-id>
+    - Hard Reset: git reset --hard <commit-id>
+  - Github CLI
+    -Creates own custom commands: gh alias set <custom_word like co> "command"
+    - Search github: gh search repos <docker-project>
+
+  
