@@ -42,7 +42,7 @@
     - Mixed Reset: git reset --mixed <commit-id>
     - Hard Reset: git reset --hard <commit-id>
   - Github CLI
-    -Creates own custom commands: gh alias set <custom_word like co> "command"
+    - Creates own custom commands: gh alias set <custom_word like co> "command"
     - Search github: gh search repos <docker-project>
 
   
